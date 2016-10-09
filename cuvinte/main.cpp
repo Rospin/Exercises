@@ -30,6 +30,7 @@ int main()
             {
                 csl --;
                 terminal ++;
+                f[i - 65]--;
             }
             for(int j = ccl; j >= 0 && f[i - 65]; j--)
             {
@@ -43,6 +44,7 @@ int main()
                     ccl --;
                     csl ++;
                     cs[csl] = cc[j];
+                    f[cc[j] - 65]--;
                 }
             }
             if(f[i - 65])   break;
